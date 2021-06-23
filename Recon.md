@@ -4,7 +4,7 @@ I have broken up this recon guide into manual and a more automated appraoch. Spe
 
 References: 
     - [The Bug Hunter's Methodology by @jhaddix](https://www.youtube.com/watch?v=gIz_yn0Uvb8&ab_channel=RedTeamVillage)
-    - [Bug Bounty Program with @TomNomNom](https://www.youtube.com/watch?v=SYExiynPEKM&ab_channel=Nahamsec)
+    - [Bug Bounty Program with @TomNomNom and @Nahamsec](https://www.youtube.com/watch?v=SYExiynPEKM&ab_channel=Nahamsec)
 
 
 ## Manual Recon
