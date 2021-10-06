@@ -145,6 +145,6 @@ I ran `grep -v .com findomain.out` to verify I did not miss any domains
 
 Cool.. next command ...  to further build out availible hosts.
 ```bash
-cat from-findomain | anew domains | httprobe -c 50 | anew hosts
+cat from-findomain | anew domains; cat domains | httprobe -c 50 | anew hosts
 ```
 
