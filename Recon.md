@@ -148,3 +148,7 @@ Cool.. next command ...  to further build out availible hosts.
 cat from-findomain | anew domains; cat domains | httprobe -c 50 | anew hosts
 ```
 
+Query and save each page.
+```bash
+cat hosts | fff -d 1 -S -o roots
+```
