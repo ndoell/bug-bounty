@@ -96,12 +96,13 @@ sudo apt-get install go
 go get -u github.com/tomnomnom/assetfinder
 go get -u github.com/tomnomnom/anew
 go get -u github.com/tomnomnom/httprobe
+go get -u github.com/tomnomnom/fff
 ```
 
 Your `~/go/bin/` should look like this now.
 ```bash
 ls      
-anew  assetfinder  httprobe
+anew  assetfinder  httprobe  fff
 ```
 
 #### Install findomain
