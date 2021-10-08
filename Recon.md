@@ -154,7 +154,7 @@ cat hosts | fff -d 1 -S -o roots
 ```
 
 Branching off from tomnomnom. 
-Send each page to burp or the link proxy.
+Send each page to burp or the like proxy.
 ```bash
 cat hosts | fff -d 50 -x http://localhost:8080
 ```
