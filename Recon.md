@@ -93,10 +93,10 @@ During the walk through Tom used shopify as an example, make sure to subsitute b
 ### Prerequisites on Kali
 ```bash
 sudo apt-get install go
-go get -u github.com/tomnomnom/assetfinder
-go get -u github.com/tomnomnom/anew
-go get -u github.com/tomnomnom/httprobe
-go get -u github.com/tomnomnom/fff
+go install github.com/tomnomnom/assetfinder@latest
+go install github.com/tomnomnom/anew@latest   
+go install github.com/tomnomnom/httprobe@latest
+go install github.com/tomnomnom/fff@latest
 ```
 
 Your `~/go/bin/` should look like this now.
