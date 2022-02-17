@@ -106,6 +106,11 @@ Your `~/go/bin/` should look like this now.
 ls      
 anew  assetfinder  httprobe  fff
 ```
+Set path to `~/go/bin` in .zprofile
+```bash
+echo "path+=(~/go/bin)" >> .zprofile
+source ~/.zprofile
+```
 
 #### Install findomain
 ```bash
@@ -113,6 +118,7 @@ cd /tmp/
 wget https://github.com/findomain/findomain/releases/latest/download/findomain-linux
 chmod +x findomain-linux
 sudo cp findomain-linux /usr/bin/findomain
+cd -
 ```
 
 ### Recon - Start
@@ -124,12 +130,13 @@ mkdir -p ~/recon/shopify; cd ~/recon/shopify
 cat wildcards                 
 shopifykloud.com
 shopify.com
+```
 
+```bash
 # Pipe wildcards to `assetfinder` then to `anew` which keeps unique strings.
 cat wildcards| assetfinder --subs-only | anew domains
 ```
  
-
 ```bash
 cat domains | httprobe -c 80 --prefer-https
 ```
