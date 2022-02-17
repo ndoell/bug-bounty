@@ -56,9 +56,11 @@ https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains
 
 1. `amass enum -brute -d twitch.tv -src`
 	1. Has a built in list but you can supply your own.
-2. `amas enum -brute -d twitch.tv -rf resolvers.txt -w bruteforce.list`
+2. `amass enum -brute -d twitch.tv -rf resolvers.txt -w bruteforce.list`
 	1. resolvers.txt would be a list of DNS servers.
-3. shuffledns (wrapper around amass) https://github.com/projectdiscovery/shuffledns
+3. `amass enum -brute -d twitch.tv -rf resolvers.txt -o subdomain.out`
+ 	1. Send output to a file.
+4. shuffledns (wrapper around amass) https://github.com/projectdiscovery/shuffledns
 
 
 ### Manual - Other
