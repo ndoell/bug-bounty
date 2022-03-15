@@ -142,13 +142,13 @@ cat domains | httprobe -c 80 --prefer-https
 ```
 
 ```bash
-findomain -f wildcards | tee -a findomain.out
+findomain -q -f wildcards | tee -a findomain.out
 ```
 
 Tom created a new file with some of the domains from the above command called from-findomain.
 Simply looked for all sites that ended with a .com, could use a regex.
 ```bash
-cat findomain.out | grep .com | grep -v '>' > from-findomain
+grep -v '¡' findomain.out > from-findomain
 ```
 
 I ran `grep -v .com findomain.out` to verify I did not miss any domains
